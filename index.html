@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+    <title>AR Experiment Donut</title>
+    </head>
+    
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    
+        
+        <body style='margin: 0px; overflow:hidden;'> 
+     
+      <a-scene embedded arjs='sourceType:webcam;'>
+            
+          
+          <a-entity obj-model="obj:url(donut-attempt.obj); mtl:url(donut-attempt.mtl)"></a-entity>
+           
+         
+            <a-marker-camera preset='hiro'>
+            
+            <a-entity object-model='0 0.5 0'>
+            <a-animation attribute="rotation"
+            dur="3000"
+            to="360 360 0"
+            repeat="indefinite"
+            easing="linear">
+            </a-animation>
+            </a-entity>
+            
+            <a-light type="ambient" color="#fdfaff" intensity:=""1.2="" light=""></a-light>
+     
+            </a-marker-camera>
+       
+            </a-scene>
+    
+        
+    </body>
+</html>
