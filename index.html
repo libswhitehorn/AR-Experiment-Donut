@@ -12,29 +12,19 @@
         <body style='margin: 0px; overflow:hidden;'> 
      
       <a-scene embedded arjs='sourceType:webcam;'>
-       
-          <a-marker-camera preset='hiro'>
             
+        
           
-          <a-entity obj-model="obj:url(donut-attempt.obj); mtl:url(donut-attempt.mtl)">
-           
-       
-            <a-animation attribute="rotation"
-            dur="3000"
-            to="360 0"
-            repeat="indefinite"
-            easing="linear">
+          <a-entity obj-model="obj:url(.donut-attempt.obj); mtl:url(.donut-attempt.mtl)"></a-entity>
           
-                </a-animation>
+          <a-light type="ambient" color="#fdfaff" intensity:=""1.2="" light=""></a-light>
            
-                </a-entity>
-            
-            <a-light type="ambient" color="#fdfaff" intensity:=""1.2="" light=""></a-light>
-     
-            </a-marker-camera>
+         
+            <a-marker-camera preset='hiro'></a-marker-camera>
        
             </a-scene>
-    
+            
+        
         
     </body>
 </html>
